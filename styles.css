@@ -3,3 +3,7 @@ h1{
     align-items: center;
     justify-content: center;
 }
+.logo{
+    width: 140px;
+    height: auto;
+}
