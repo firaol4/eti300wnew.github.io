@@ -2,9 +2,6 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
-}
-
-header img {
     height: auto;
     width: auto;
 }
