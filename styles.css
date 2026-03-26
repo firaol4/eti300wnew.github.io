@@ -1,6 +1,5 @@
-h1{
-    font-family: arial;
-    font-size: 24px;
-    color: rgb(108, 108, 215);
+header img {
+    height: 60px;
     text-align: center;
+    width: 100px;
 }
