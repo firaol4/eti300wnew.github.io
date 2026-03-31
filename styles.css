@@ -142,3 +142,15 @@ body {
     background-color: rgb(198, 189, 189);
     color: white;
 }
+
+.sign-in-logo-area {
+    display: flex;
+    justify-content: left;
+    flex: 1;
+}
+
+.sign-in-logo {
+    width: 110px;
+    height: auto;
+    display: block;
+}
