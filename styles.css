@@ -105,7 +105,8 @@ body {
 }
 
 .hero-title {
-    font-size: 42px;
+    font-size: 62px;
+    font: open sans, sans-serif;
     font-weight: 700px;
     margin-bottom: 30px;
 }
@@ -113,10 +114,10 @@ body {
 .search-bar {
     display: flex;
     width: 100%;
-    max-width: 600px;
+    max-width: 750px;
     margin: 20px 0,0,0;
     background: white;
-    border-radius: 6px;
+    border-radius: 50px;
     overflow: hidden;
     border: 1px solid white;
 }
