@@ -117,7 +117,7 @@ body {
     max-width: 750px;
     margin: 20px 0,0,0;
     background: white;
-    border-radius: 50px;
+    border-radius: 20px;
     overflow: hidden;
     border: 1px solid white;
 }
@@ -132,14 +132,12 @@ body {
 
 .search-btn {
     background: white;
-    color: rgb(32, 32, 186);
-    border: rgb(147, 139, 139);
     padding: 0 24px;
-    font-size: 14px;
+    font-size: 16px;
     cursor: pointer;
 }
 
 .search-btn:hover {
-    background: #8e939a;
+    font-size: 20px;
     color: white;
 }
