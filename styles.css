@@ -63,5 +63,17 @@ body {
 }
 
 .nav-link:hover {
-   text-decoration: underline;
+   color: rgb(43, 43, 242);
+}
+
+.sign-in-btn {
+    background-color: rgb(43, 43, 242);
+    color: white;
+    padding: 6px 14px;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+.sign-in-btn:hover {
+    background-color: darkblue;
 }
