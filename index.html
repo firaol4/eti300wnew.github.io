@@ -3,35 +3,50 @@
 <head> 
     <meta charset="UTF-8">
     <title>Zillow Site</title>    
-    <link rel="stylesheet" href="styles.css">  
+    <link rel="stylesheet" href="styles.css">  <!-- inserts css -->
 </head> 
         
 <body>
 
-    <header class="site-header">
+    <header class="site-header">    <!-- starts header section -->
         <div class="header-inner">
         
-            <nav class="main-nav">
-                <a href="index.html" class="nav-link active">Buy</a>
+            <nav class="main-nav">    <!-- add nav headers-->
+                <a href="index.html" class="nav-link">Buy</a>
                 <a href="index.html" class="nav-link">Rent</a>
                 <a href="index.html" class="nav-link">Sell</a>
                 <a href="index.html" class="nav-link">Get a Mortgage</a>
                 <a href="index.html" class="nav-link">Find an Agent</a>
             </nav>
 
-            <div class="logo-area">
+            <div class="logo-area">     <!-- insert zillow logo -->
                 <h1>
                     <img src="images/zillow-logo.png" class="logo" alt="Zillow Logo"> 
                 </h1>
             </div> 
 
-            <div class="header-right">
+            <div class="header-right">     <!-- right side headers-->
                 <a href="home-matching.html" class="nav-link highlight">Home Matching</a>
-                <a href="sign-in.html" class="nav-link sign-in-btn">Sign In</a>
+                <a href="sign-in.html" class="nav-link sign-in-btn">Sign In</a> <!-- sign in button -->
             </div>
         </div>
-    </header>
+    </header> <!-- end header section -->
+
+    <main class="hero">    <!-- starts main section -->
+        <div class="hero-overlay">  <!-- adds overlay to hero image -->
+            <div class="hero-content">
+
+                <h1 class="hero-title"> Rentals. Homes. <br> Agents. Loans.</h1>
+
+                <form class="search-bar">
+                    <input type="text" class="search-input" placeholder="Enter an address, neighborhood, city, or ZIP code">
+                    <button type="submit" class="search-btn">Search</button>
+                </form>
+            </div>
+        </div>
+    </main> <!-- end main section -->
+           
         
-</body>
+</body> 
     
 </html>
