@@ -117,7 +117,7 @@ body {
     max-width: 750px;
     margin: 20px 0,0,0;
     background: white;
-    border-radius: 20px;
+    border-radius: 6px;
     overflow: hidden;
     border: 1px solid white;
 }
@@ -138,6 +138,6 @@ body {
 }
 
 .search-btn:hover {
-    font-size: 20px;
+    background-color: rgb(198, 189, 189);
     color: white;
 }
