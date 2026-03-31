@@ -93,7 +93,7 @@ body {
     height: 100%;
     background: linear-gradient(rgba (0,0,0,0.55) rgba(0,0,0,0.75));
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
 }
 
@@ -142,5 +142,6 @@ body {
 }
 
 .search-btn:hover {
-    background: #0050c7;
+    background: #8e939a;
+    color: white;
 }
