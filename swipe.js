@@ -21,8 +21,8 @@ let index = 0;
 function showHome() {
     const home = homes[index];
     document.getElementById("home-image").src = home.image_url;
-    document.getElementById("home-address").innerText = home.address;
     document.getElementById("home-price").innerText = "$" + home.price.toLocaleString();
+    document.getElementById("home-address").innerText = home.address;
 }
 
 document.getElementById("like-btn").onclick = () => {
