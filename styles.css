@@ -156,6 +156,13 @@ body {
     display: block;
 }
 
+.matching-title {
+    text-align: center;
+    font-size: 30px;
+    margin-top: 20px;
+    font: open sans, sans-serif;
+}
+
 .swipe-container {
     width: 350px;
     margin: 0 auto;
