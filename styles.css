@@ -276,6 +276,13 @@ input, select {
     margin: 0;
 }
 
+.checkbox-group label {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin: 0;
+}
+
 .submit-btn-quiz {
     margin-top: 30px;
     width: 100%;
