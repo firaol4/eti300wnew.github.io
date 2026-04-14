@@ -270,20 +270,6 @@ input, select {
     margin-top: 10px;
 }
 
-.checkbox-group label {
-    display: flex;
-    justify-content: space-between; /* text left, checkbox right */
-    align-items: center;            /* vertical alignment */
-    width: 100%;
-    margin: 0;
-    padding: 2px 0;
-}
-
-.checkbox-group input[type="checkbox"] {
-    margin: 0;
-    position: relative;
-    top: 1px; /* tiny vertical correction */
-}
 
 .submit-btn-quiz {
     margin-top: 30px;
