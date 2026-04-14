@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home Matching Quiz</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>Home Matching Quiz</h1>
+
+    <!-- BASIC HOME SPECS -->
+    <div class="section-title-quiz">Basic Home Preferences</div>
+    <div class="grid-quiz">
+        <div class="card-quiz">
+            <label>Number of Bedrooms</label>
+            <select>
+                <option value="">Select...</option>
+                <option>1+</option>
+                <option>2+</option>
+                <option>3+</option>
+                <option>4+</option>
+                <option>5+</option>
+            </select>
+        </div>
+
+        <div class="card-quiz">
+            <label>Number of Bathrooms</label>
+            <select>
+                <option value="">Select...</option>
+                <option>1+</option>
+                <option>2+</option>
+                <option>3+</option>
+                <option>4+</option>
+            </select>
+        </div>
+
+        <div class="card-quiz">
+            <label>Square Footage (Minimum)</label>
+            <input type="number" placeholder="e.g., 1200">
+        </div>
+
+        <div class="card-quiz">
+            <label>Maximum Price ($)</label>
+            <input type="number" placeholder="e.g., 450000">
+        </div>
+
+        <div class="card-quiz">
+            <label>ZIP Code</label>
+            <input type="text" placeholder="e.g., 16801">
+        </div>
+    </div>
+
+    <!-- FILTERS -->
+    <div class="section-title-quiz">Additional Filters</div>
+    <div class="grid-quiz">
+        <div class="card-quiz">
+            <label>Outdoor Features</label>
+            <div class="checkbox-group">
+                <label><input type="checkbox"> Pool</label>
+                <label><input type="checkbox"> Waterfront</label>
+                <label><input type="checkbox"> Large Yard</label>
+                <label><input type="checkbox"> Deck / Patio</label>
+            </div>
+        </div>
+
+        <div class="card-quiz">
+            <label>Home Features</label>
+            <div class="checkbox-group">
+                <label><input type="checkbox"> Garage</label>
+                <label><input type="checkbox"> Fireplace</label>
+                <label><input type="checkbox"> Central Air</label>
+                <label><input type="checkbox"> Finished Basement</label>
+            </div>
+        </div>
+
+        <div class="card-quiz">
+            <label>Community Preferences</label>
+            <div class="checkbox-group">
+                <label><input type="checkbox"> Walkable Area</label>
+                <label><input type="checkbox"> Quiet Neighborhood</label>
+                <label><input type="checkbox"> Near Schools</label>
+                <label><input type="checkbox"> Pet Friendly</label>
+            </div>
+        </div>
+    </div>
+
+    <button class="submit-btn-quiz">Submit Preferences</button>
+</div>
+
+</body>
+</html>
