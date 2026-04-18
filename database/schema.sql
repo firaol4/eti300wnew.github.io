@@ -15,8 +15,15 @@ CREATE TABLE homes (
 );
 
 INSERT INTO homes (address, city, state, zip_code, price, beds, baths) VALUES
-('201 College Ave', 'State College', 'PA', '16801', 425000.00, 3, 2.0),
-('315 W Beaver Ave', 'State College', 'PA', '16801', 389000.00, 2, 2.0),
-('1200 E College Ave', 'State College', 'PA', '16801', 515000.00, 4, 3.0),
-('1450 Martin St', 'State College', 'PA', '16803', 342500.00, 3, 2.5),
-('2200 N Atherton St', 'State College', 'PA', '16803', 468000.00, 4, 2.5);
+('1811 E Branch Rd', 'State College', 'PA', '16801', 329900.00, 3, 2.0),
+('221 Ellen Ave', 'State College', 'PA', '16801', 399000.00, 4, 2.0),
+('2278 Spruce Dr', 'State College', 'PA', '16801', 409000.00, 3, 3.0),
+('327 Fry Dr', 'State College', 'PA', '16801', 479000.00, 3, 2.0),
+('234 W Fairmount Ave', 'State College', 'PA', '16801', 2585000.00, 8, 9.0),
+('126 W South Hills Ave', 'State College', 'PA', '16801', 199900.00, 2, 2.0),
+('2107 Circleville Rd', 'State College', 'PA', '16803', 394000.00, 4, 3.0),
+('576 E Shadow Ln', 'State College', 'PA', '16803', 873900.00, 4, 4.0),
+('403 Keller St', 'State College', 'PA', '16801', 235000.00, 3, 2.0),
+('316 Homan Ave', 'State College', 'PA', '16801', 650000.00, 3, 3.0),
+('422 Martin Ter', 'State College', 'PA', '16803', 458000.00, 3, 2.0),
+('620 Fawn Valley Rd', 'State College', 'PA', '16803', 465000.00, 4, 3.0);
