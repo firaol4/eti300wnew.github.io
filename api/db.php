@@ -1,6 +1,6 @@
 <?php
 
-$host = "localhost";
+$host = "10.2.0.177";
 $user = "apiuser";
 $password = "StrongPassword123!";
 $database = "homesdb";
