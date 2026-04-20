@@ -13,9 +13,13 @@ function showHome() {
 
   const home = homes[index];
 
+  
   document.getElementById("home-address").textContent = home.address;
-  document.getElementById("home-price").textContent = "$" + Number(home.price).toLocaleString();
+  document.getElementById("home-price").textContent = "$" + home.price.toLocaleString();
+
+  document.getElementById("home-image").src = home.image_url;
 }
+
 
 function nextHome() {
   index = (index + 1) % homes.length;
