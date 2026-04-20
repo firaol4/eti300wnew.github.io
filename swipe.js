@@ -2,7 +2,7 @@ let homes = [];
 let index = 0;
 let imgIndex = 0;
 
-fetch("http://YOUR_SERVER/homes.php")
+fetch("http://98.92.43.134/homes.php")
   .then(res => res.json())
   .then(data => {
     homes = data;
