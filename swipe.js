@@ -1,7 +1,7 @@
 let homes = [];
 let index = 0;
 
-fetch("http://44.223.40.149/api/getHomes.php")
+fetch("http://98.92.43.134/api/getHomes.php")
   .then(res => res.json())
   .then(data => {
     homes = data;
