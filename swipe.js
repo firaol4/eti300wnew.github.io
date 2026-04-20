@@ -16,22 +16,13 @@ function getImageUrl(filename) {
 function showHome() {
   const home = homes[index];
 
+  
   document.getElementById("home-address").textContent = home.address;
   document.getElementById("home-price").textContent = "$" + home.price.toLocaleString();
 
-  const currentImage = home.images[imgIndex];
-  document.getElementById("home-image").src = getImageUrl(currentImage);
+  document.getElementById("home-image").src = home.image_url;
 }
 
-function nextImage() {
-  imgIndex = (imgIndex + 1) % homes[index].images.length;
-  showHome();
-}
-
-function prevImage() {
-  imgIndex = (imgIndex - 1 + homes[index].images.length) % homes[index].images.length;
-  showHome();
-}
 
 function nextHome() {
   index = (index + 1) % homes.length;
