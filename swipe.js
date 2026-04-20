@@ -1,6 +1,5 @@
 let homes = [];
 let index = 0;
-let imgIndex = 0;
 
 fetch("http://98.92.43.134/api/getHomes.php")
   .then(res => res.json())
@@ -9,11 +8,9 @@ fetch("http://98.92.43.134/api/getHomes.php")
     showHome();
   });
 
-function getImageUrl(filename) {
-  return `/images/${filename}`;
-}
-
 function showHome() {
+  if (!homes.length) return;
+
   const home = homes[index];
 
   
@@ -26,14 +23,10 @@ function showHome() {
 
 function nextHome() {
   index = (index + 1) % homes.length;
-  imgIndex = 0;
   showHome();
 }
 
-document.getElementById("like-btn").onclick = () => {
-  nextHome();
-};
-
-document.getElementById("dislike-btn").onclick = () => {
-  nextHome();
+window.onload = function () {
+  document.getElementById("like-btn").onclick = nextHome;
+  document.getElementById("dislike-btn").onclick = nextHome;
 };
