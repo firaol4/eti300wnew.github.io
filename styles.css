@@ -83,7 +83,7 @@ body {
 .hero {
     position: relative;
     height: 500px;
-    background-image: url(images/zillow-hero1.png);
+    background-image: url(/images/zillow-hero1.png);
     background-size: cover;
     background-position: center;
 }
