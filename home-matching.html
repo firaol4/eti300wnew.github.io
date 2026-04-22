@@ -3,39 +3,44 @@
 <head> 
     <meta charset="UTF-8">
     <title>Matching Page</title>    
-    <link rel="stylesheet" href="styles.css">  <!-- inserts css -->
-</head> 
-<script src="swipe.js"></script>      
+    <link rel="stylesheet" href="styles.css">
+</head>      
+
 <body>
 
-    <header class="site-header">    <!-- starts header section -->
-        <div class="header-inner">
+    <header class="site-header">
+        <div class="header-inner"></div>
 
-        </div>
-        <div class="logo-area">     <!-- insert zillow logo -->
-                <h1>
-                    <a href="index.html">
+        <div class="logo-area">
+            <h1>
+                <a href="index.html">
                     <img src="/images/zillow-logo.png" class="logo" alt="Zillow Logo"> 
-                    </a>
-                </h1>
-            </div> 
-    </header> <!-- end header section -->
-    <main class="matching-main">    <!-- starts main section -->
+                </a>
+            </h1>
+        </div> 
+    </header>
+
+    <main class="matching-main">
         <h1 class="matching-title">Your Home Matches</h1>
 
-<div class="swipe-container">
-    <div id="swipe-card" class="card">
-        <img id="home-image" src="" alt="Home">
+        <div class="swipe-container">
+            <div id="swipe-card" class="card">
+                <img id="home-image" src="" alt="Home">
 
-<h2 id="home-address"></h2>
-<p id="home-price"></p>
-    </div>
+                <h2 id="home-address"></h2>
+                <p id="home-price"></p>
+            </div>
 
-<div class="buttons">
-        <button id="dislike-btn">❌</button>
-        <button id="like-btn">❤️</button>
-    </div>
-</div>
-    </main> <!-- end main section -->
+            <div class="buttons">
+                <button id="dislike-btn">❌</button>
+                <button id="like-btn">❤️</button>
+            </div>
+        </div>
+    </main>
 
+    <!-- ⭐ THIS is where your script belongs -->
+    <script src="swipe.js"></script>
+
+</body>
+</html>
         
