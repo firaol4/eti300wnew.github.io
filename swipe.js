@@ -1,32 +1,49 @@
+const hardcodedImages = {
+  6: "images/swipe-2.png",
+  7: "images/swipe-3.png",
+  8: "images/swipe-4.png",
+  9: "images/swipe-5.png",
+  10: "images/swipe-6.png",
+  11: "images/swipe-7.png",
+  12: "images/swipe-8.png",
+  13: "images/swipe-9.png",
+  14: "images/swipe-10.png",
+  15: "images/swipe-11.png",
+  16: "images/swipe-12.png",
+  17: "images/test-image-listing.png"
+};
+
 let homes = [];
 let index = 0;
 
-fetch("http://98.92.43.134/api/getHomes.php")
+// 2. Fetch homes from backend
+fetch("http://34.204.201.64/api/getHomes.php")
   .then(res => res.json())
   .then(data => {
     homes = data;
     showHome();
-  });
+  })
+  .catch(err => console.error("Fetch error:", err));
 
+// 3. Display the current home
 function showHome() {
-  if (!homes.length) return;
-
   const home = homes[index];
 
-  
   document.getElementById("home-address").textContent = home.address;
-  document.getElementById("home-price").textContent = "$" + home.price.toLocaleString();
+  document.getElementById("home-price").textContent =
+    "$" + Number(home.price).toLocaleString();
 
-  document.getElementById("home-image").src = home.image_url;
+  // Use your hard-coded image
+  document.getElementById("home-image").src = hardcodedImages[home.id];
 }
 
-
-function nextHome() {
+// 4. Swipe buttons
+document.getElementById("like-btn").onclick = () => {
   index = (index + 1) % homes.length;
   showHome();
-}
+};
 
-window.onload = function () {
-  document.getElementById("like-btn").onclick = nextHome;
-  document.getElementById("dislike-btn").onclick = nextHome;
+document.getElementById("dislike-btn").onclick = () => {
+  index = (index + 1) % homes.length;
+  showHome();
 };
